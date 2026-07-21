@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 You don't remember every skill, so ask.
 
-A **flow** is a path through the skills. Most paths run along one **main flow**, and two **on-ramps** merge onto it. Everything else is standalone, or a vocabulary layer that runs underneath.
+A **flow** is a path through the skills. Most paths run along one **main flow**, with several **on-ramps** that merge onto it. Everything else is standalone, or a vocabulary layer that runs underneath.
 
 ## The main flow: idea → ship
 
@@ -41,9 +41,13 @@ A starting situation that generates work, then merges onto the main flow.
 
 - **Something's broken** → **`/diagnosing-bugs`**. For the hard ones: the bug that resists a first glance, the intermittent flake, the regression that crept in between two known-good states. It refuses to theorise until it has a **tight feedback loop** — one command that already goes red on *this* bug — then fixes with a regression test. Its post-mortem hands off to **`/improve-codebase-architecture`** when the real finding is that there's no good seam to lock the bug down.
 
-- **A huge, foggy effort — a greenfield project or a huge feature build, too big for one session** → **`/wayfinder`**, the most cognitively demanding flow here. When the way from here to the destination isn't visible yet, it charts a **shared map** of **decision tickets** on the issue tracker and resolves them one at a time — producing **decisions, not deliverables** — until the fog is pushed back and the way is clear. Where **`/grill-with-docs`** sharpens an idea you can hold in one session, wayfinder is for the idea you can't — and it's slower and denser, so save it for exactly that, never a well-scoped feature.
+- **A huge, foggy effort — a greenfield project or a huge feature build, too big for one session** → choose by what should carry decisions across the effort:
+  - **`/wayfinder`** when the route itself is the problem. It charts a **shared map** of **decision tickets** on the issue tracker and resolves them one at a time — producing **decisions, not deliverables** — until the fog is pushed back and the way is clear.
+  - **`/through-line`** when the decisions appear to share recurring commitments. It distills those commitments into human-adopted standing principles in `PRINCIPLES.md`, then uses them to derive batches of decisions for human confirmation. Use it when you want the effort to leave reusable doctrine behind, not only a cleared route.
 
-  When the map clears, **it hands off, it doesn't build**: merge onto the main flow at **`/to-spec`**, which collapses the map's linked decisions into a buildable plan, then `/to-tickets` and `/implement` as usual. Looping the map straight into `/implement` skips that collapse and throws the linked detail away — go straight to `/implement` only when the effort turned out genuinely small.
+  Both are cognitively demanding. Where **`/grill-with-docs`** sharpens an idea you can hold in one session, these are for an idea you can't — save them for exactly that, never a well-scoped feature.
+
+  When either map reaches its destination, **it hands off, it doesn't build** unless its notes explicitly put execution in scope: merge onto the main flow at **`/to-spec`**, which collapses the map's linked decisions into a buildable plan, then `/to-tickets` and `/implement` as usual. Looping the map straight into `/implement` skips that collapse and throws the linked detail away — go straight to `/implement` only when the effort turned out genuinely small.
 
 ## Codebase health
 
