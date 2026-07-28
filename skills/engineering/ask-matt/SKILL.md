@@ -43,7 +43,7 @@ A starting situation that generates work, then merges onto the main flow.
 
 - **A huge, foggy effort — a greenfield project or a huge feature build, too big for one session** → choose by what should carry decisions across the effort:
   - **`/wayfinder`** when the route itself is the problem. It charts a **shared map** of **decision tickets** on the issue tracker and resolves them one at a time — producing **decisions, not deliverables** — until the fog is pushed back and the way is clear.
-  - **`/through-line`** when the decisions appear to share recurring commitments. It distills those commitments into human-adopted standing principles in `PRINCIPLES.md`, then resolves derived decisions under decision rights agreed for the effort — every decision can stay human-owned, or obvious reversible choices can be delegated within guardrails. Use it when you want the effort to leave reusable doctrine behind, not only a cleared route.
+  - **`/through-line`** when the decisions appear to share recurring commitments. It distills those commitments into human-adopted standing principles in `PRINCIPLES.md`, then resolves derived decisions under decision rights agreed for the effort. Use it when you want the effort to leave reusable doctrine behind, not only a cleared route.
 
   Both are cognitively demanding. Where **`/grill-with-docs`** sharpens an idea you can hold in one session, these are for an idea you can't — save them for exactly that, never a well-scoped feature.
 
