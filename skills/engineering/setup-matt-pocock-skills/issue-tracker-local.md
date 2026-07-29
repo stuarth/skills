@@ -20,11 +20,23 @@ Read the file at the referenced path. The user will normally pass the path or th
 
 ## Wayfinding operations
 
-Used by `/wayfinder`. The **map** is a file with one **child** file per ticket.
+Used by `/wayfinder` and `/through-line`. The **map** is a file with one **child**
+file per ticket.
 
-- **Map**: `.scratch/<effort>/map.md` — the Notes / Decisions-so-far / Fog body.
-- **Child ticket**: `.scratch/<effort>/issues/NN-<slug>.md`, numbered from `01`, with the question in the body. A `Type:` line records the ticket type (`research`/`prototype`/`grilling`/`task`); a `Status:` line records `claimed`/`resolved`.
-- **Blocking**: a `Blocked by: NN, NN` line near the top. A ticket is unblocked when every file it lists is `resolved`.
-- **Frontier**: scan `.scratch/<effort>/issues/` for files that are open, unblocked, and unclaimed; first by number wins.
-- **Claim**: set `Status: claimed` and save before any work.
-- **Resolve**: append the answer under an `## Answer` heading, set `Status: resolved`, then append a context pointer (gist + link) to the map's Decisions-so-far in `map.md`.
+- **Map**: `.scratch/<effort>/map.md` — the low-resolution Notes, resolved indexes,
+  fog, and scope body the active skill defines. For `/through-line`, add `Label:
+  through-line:map` and `Status: open|resolved` near the top.
+- **Child ticket**: `.scratch/<effort>/issues/NN-<slug>.md`, numbered from `01`,
+  with the question in the body. A `Type:` line records
+  `decision`/`research`/`prototype`/`grilling`/`task`; a `Status:` line records
+  `open`/`claimed`/`blocked`/`resolved`.
+- **Blocking**: a `Blocked by: NN, NN` line near the top. Use `blocked` only while
+  at least one listed ticket is unresolved.
+- **Frontier**: scan `.scratch/<effort>/issues/` for files that are `open`,
+  unblocked, and unclaimed; first by number wins.
+- **Claim**: add `Assignee: <dev>`, set `Status: claimed`, and save before work.
+- **Unclaim**: remove `Assignee` and set `Status: blocked` when an unresolved blocker
+  exists, otherwise `Status: open`.
+- **Resolve**: append the answer under `## Answer` or `## Resolution`, set
+  `Status: resolved`, retain the assignee, then update the map through the active
+  skill's recording rules.
