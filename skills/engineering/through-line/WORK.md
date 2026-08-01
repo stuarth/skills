@@ -215,4 +215,8 @@ ticket and present a review round; the human chooses what to revisit.
 When the destination is reached, close the map with a local-policy sweep: record each
 policy's determined derivations, scenario spread, and pre-effort evidence; look for
 the higher-altitude candidate the group implies; propose any graduation through
-[ADMISSION.md](./ADMISSION.md). The rest remain minable on the closed map.
+[ADMISSION.md](./ADMISSION.md). For each principle or local policy admitted or revised
+on this map, compare its Admission **Predictions** with its recorded determined and
+constrained derivations and boundary tests; surface predictions that did not
+materialize, leaving the doctrine's status to the human. The rest remain minable on
+the closed map.

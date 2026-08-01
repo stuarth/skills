@@ -141,9 +141,11 @@ Recording is done when the tracker agrees with reality:
   commits or pull request in **Resolution**—linked when a remote exists, by hash
   otherwise;
 - every resolved decision records provenance in **Resolution**: a human verdict is
-  quoted or linked from its durable artifact; otherwise name the adopted principle,
-  local policy, or recorded final premise that justified, determined, or mooted the
-  closure;
+  quoted or linked from its durable artifact; otherwise preserve the adopted
+  principle, local policy, or recorded final premise's reach. Name one that
+  determined or mooted the closure; when it only constrained the decision and
+  individual builder judgment resolved the residual choice, name both rather than
+  crediting the constraint as determination;
 - **Decisions so far** indexes exactly the closed in-scope decision tickets;
 - **Findings** indexes exactly the closed in-scope research, prototype, and task
   tickets;

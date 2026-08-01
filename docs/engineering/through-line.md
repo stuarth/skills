@@ -88,11 +88,12 @@ When a principle stops predicting good answers, the skill treats that as evidenc
 - The map names a destination, while `PRINCIPLES.md` holds only guidance that survives beyond that destination.
 - A round contains one ownership class and only decisions fully determined by an adopted principle, local policy, or recorded final premise.
 - Every human verdict produces a propagation delta: what resolved, what narrowed, and what still needs human judgment.
-- Every closed decision preserves why it closed: the human's quoted verdict or linked artifact, or the principle, local policy, or final premise that justified, determined, or mooted it.
+- Every closed decision preserves why it closed without inflating a constraint into a derivation: the human's verdict is quoted or linked; determining and mooting premises are named; and a constrained builder-owned closure names both the constraint and the judgment that closed the residual choice.
 - Each Work session ends after one starting round or ticket and its propagation cascade, with the next frontier recorded for a fresh Work session.
 - Decisions no principle determines receive individual judgment under their decision right instead of forcing a vague principle to reach them.
 - Work that lands in a repository is discoverable from the tracker alone: the claim names the repository and branch, and the resolution records the durable commits or pull request.
 - The map's closed-ticket indexes and tracker frontier agree with the tickets' real state.
+- Map closeout compares doctrine admitted or revised on that map with its Admission predictions and surfaces predictions that did not materialize.
 
 ## Where it fits
 
