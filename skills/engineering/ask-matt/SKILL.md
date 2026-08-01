@@ -45,6 +45,9 @@ A starting situation that generates work, then merges onto the main flow.
   - **`/wayfinder`** when the route itself is the problem. It charts a **shared map** of **decision tickets** on the issue tracker and resolves them one at a time — producing **decisions, not deliverables** — until the fog is pushed back and the way is clear.
   - **`/through-line`** when the decisions appear to share recurring commitments. It distills those commitments into human-adopted standing principles in `PRINCIPLES.md`, then propagates each verdict through the remaining map so only residual judgment returns to the human. Use it when you want the effort to leave reusable doctrine behind, not only a cleared route.
 
+  When a through-line map includes execution, its Work session coordinates bounded
+  executors while retaining review, propagation, and tracker reconciliation.
+
   Both are cognitively demanding. Where **`/grill-with-docs`** sharpens an idea you can hold in one session, these are for an idea you can't — save them for exactly that, never a well-scoped feature.
 
   When either map reaches its destination, **it hands off, it doesn't build** unless its notes explicitly put execution in scope: merge onto the main flow at **`/to-spec`**, which collapses the map's linked decisions into a buildable plan, then `/to-tickets` and `/implement` as usual. Looping the map straight into `/implement` skips that collapse and throws the linked detail away — go straight to `/implement` only when the effort turned out genuinely small.
